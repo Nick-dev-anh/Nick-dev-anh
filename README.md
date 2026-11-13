@@ -1,13 +1,11 @@
 <div align="center">
 
-  <!-- Hero Banner (Anchored to stay on page and prevent opening raw SVG) -->
-  <a href="#-">
-    <img src="./assets/banner.svg" alt="Nick Banner" width="100%" />
-  </a>
+  <!-- Hero Banner -->
+  <img src="./assets/banner.svg" alt="Nick Banner" width="100%" />
 
   <br/><br/>
 
-  <!-- Dynamic Typewriter Terminal (Pure Image, Non-Clickable) -->
+  <!-- Dynamic Typewriter Terminal -->
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=1100&color=39FF14&center=true&vCenter=true&width=700&height=50&lines=Computer+Science+Graduate+%7C+AI+Engineer;Computer+Vision+Specialist+%7C+OpenCV+%26+YOLO;High-Performance+C%23+(.NET)+%26+Python+Solutions;Building+Intelligent+Pipelines+%26+Autonomous+Agents" alt="Typing SVG" />
 
   <p align="center">
@@ -81,9 +79,7 @@ open_for: Freelance projects, AI engineering contracts, & tech collaborations
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
   <tr align="center">
     <td valign="top" style="padding: 6px;">
-      <a href="#-">
-        <img width="495" height="195" src="./assets/tech_stats.svg" alt="Engineering Metrics" />
-      </a>
+      <img width="495" height="195" src="./assets/tech_stats.svg" alt="Engineering Metrics" />
     </td>
     <td valign="top" style="padding: 6px;">
       <img width="495" height="195" src="https://streak-stats.demolab.com?user=Nick-dev-anh&theme=dark&background=0D1117&border=39FF14&stroke=39FF14&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=F0F6FC&dates=8B949E&hide_border=false" alt="Nick's Streak" />
@@ -91,9 +87,7 @@ open_for: Freelance projects, AI engineering contracts, & tech collaborations
   </tr>
   <tr align="center">
     <td colspan="2" valign="top" style="padding: 6px;">
-      <a href="#-">
-        <img width="1000" src="./assets/languages.svg" alt="Core Languages and Domains" />
-      </a>
+      <img width="1000" src="./assets/languages.svg" alt="Core Languages and Domains" />
     </td>
   </tr>
 </table>
@@ -115,9 +109,7 @@ Whether you need Computer Vision models, backend architectures, or intelligent a
 </p>
 
 <p align="center">
-  <a href="#-">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=80&section=footer&stroke=39FF14&strokeWidth=1.5" width="100%" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=80&section=footer&stroke=39FF14&strokeWidth=1.5" width="100%" />
 </p>
 
 </div>
