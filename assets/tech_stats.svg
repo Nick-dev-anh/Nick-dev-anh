@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" width="495" height="195">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#080C11"/>
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#00FF66"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="url(#cardBg)" stroke="#39FF14" stroke-width="1"/>
+
+  <!-- Title Header -->
+  <g transform="translate(25, 32)">
+    <circle cx="0" cy="0" r="4" fill="#39FF14" filter="url(#glow)"/>
+    <text x="14" y="4" fill="#39FF14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" letter-spacing="0.5">
+      CORE ENGINEERING METRICS
+    </text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="25" y1="46" x2="470" y2="46" stroke="#1F2937" stroke-width="1"/>
+
+  <!-- Stats Grid -->
+  <!-- Row 1 -->
+  <g transform="translate(25, 78)">
+    <text x="0" y="0" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+      Specialization
+    </text>
+    <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      AI &amp; Computer Vision
+    </text>
+    <text x="155" y="20" fill="#39FF14" font-family="'Fira Code', monospace" font-size="11" font-weight="600">
+      [YOLO • OpenCV]
+    </text>
+  </g>
+
+  <g transform="translate(270, 78)">
+    <text x="0" y="0" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+      Backend Stack
+    </text>
+    <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      C# (.NET) &amp; Python
+    </text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(25, 138)">
+    <text x="0" y="0" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+      Pipelines &amp; Extraction
+    </text>
+    <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      Playwright &amp; Pydantic
+    </text>
+  </g>
+
+  <g transform="translate(270, 138)">
+    <text x="0" y="0" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+      Database Engine
+    </text>
+    <text x="0" y="20" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">
+      Microsoft SQL Server
+    </text>
+  </g>
+
+  <!-- Footer Micro Badge -->
+  <g transform="translate(420, 32)">
+    <rect x="-30" y="-12" width="75" height="18" rx="9" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="7" y="1" text-anchor="middle" fill="#39FF14" font-family="'Fira Code', monospace" font-size="10" font-weight="600">VERIFIED</text>
+  </g>
+</svg>

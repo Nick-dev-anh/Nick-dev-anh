@@ -1,0 +1,141 @@
+<svg fill="none" viewBox="0 0 920 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070A"/>
+      <stop offset="40%" stop-color="#0B0F17"/>
+      <stop offset="80%" stop-color="#080C12"/>
+      <stop offset="100%" stop-color="#030406"/>
+    </linearGradient>
+
+    <!-- Lime Gradient Accent -->
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14"/>
+      <stop offset="50%" stop-color="#00FF66"/>
+      <stop offset="100%" stop-color="#A3E635"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#00FF66" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#161B22" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Perspective Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1" fill="#39FF14" fill-opacity="0.2"/>
+    </pattern>
+
+    <!-- Ambient Glow Orb -->
+    <radialGradient id="ambientLime" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#00FF66" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#05070A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseMarker {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.15); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0); opacity: 0.15; }
+      50% { opacity: 0.3; }
+      100% { transform: translateY(280px); opacity: 0.05; }
+    }
+    .pulsing-dot {
+      animation: pulseMarker 3s ease-in-out infinite;
+      transform-origin: 840px 60px;
+    }
+  </style>
+
+  <!-- Base Dark Canvas (70% Deep Black / OLED Void) -->
+  <rect width="920" height="280" rx="18" fill="url(#bgGrad)"/>
+  <rect width="920" height="280" rx="18" fill="url(#ambientLime)"/>
+  <rect width="920" height="280" rx="18" fill="url(#cyberGrid)"/>
+
+  <!-- Sleek Neon Border with Gradient -->
+  <rect width="918" height="278" x="1" y="1" rx="17" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Top Decorative Neon Beam -->
+  <line x1="60" y1="1" x2="380" y2="1" stroke="url(#limeGrad)" stroke-width="3" filter="url(#neonGlow)"/>
+
+  <!-- HUD Corner Accents -->
+  <path d="M 18 35 L 18 18 L 35 18" stroke="#39FF14" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 902 35 L 902 18 L 885 18" stroke="#39FF14" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 18 245 L 18 262 L 35 262" stroke="#39FF14" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 902 245 L 902 262 L 885 262" stroke="#39FF14" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Top Terminal Bar -->
+  <g transform="translate(48, 38)">
+    <circle cx="0" cy="0" r="5.5" fill="#FF5F56"/>
+    <circle cx="16" cy="0" r="5.5" fill="#FFBD2E"/>
+    <circle cx="32" cy="0" r="5.5" fill="#27C93F"/>
+    <text x="54" y="4" fill="#8B949E" font-family="'Fira Code', 'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="500">
+      nick@core ~ <tspan fill="#39FF14">system/active</tspan>
+    </text>
+  </g>
+
+  <!-- Right Geometric Radar Orb -->
+  <g class="pulsing-dot">
+    <circle cx="840" cy="65" r="38" stroke="#39FF14" stroke-opacity="0.12" stroke-width="1.5" fill="none"/>
+    <circle cx="840" cy="65" r="22" stroke="#39FF14" stroke-opacity="0.22" stroke-width="1" fill="none"/>
+    <circle cx="840" cy="65" r="4.5" fill="#39FF14" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Main Headline (20% Crisp White with 10% Lime Gradient) -->
+  <text x="48" y="128" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
+    Hi, I'm <tspan fill="url(#limeGrad)" filter="url(#subtleGlow)">Nick</tspan>
+  </text>
+
+  <!-- Subtitle (20% Silver High-Contrast Typography) -->
+  <text x="48" y="172" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" letter-spacing="-0.2">
+    Computer Science Graduate <tspan fill="#39FF14">✦</tspan> AI &amp; Vision Engineer <tspan fill="#39FF14">✦</tspan> Intelligent Systems
+  </text>
+
+  <!-- Tagline / Mission -->
+  <text x="48" y="202" fill="#8B949E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+    Architecting computer vision pipelines, full-stack backends, and autonomous agent workflows.
+  </text>
+
+  <!-- Status Badges / Tech HUD -->
+  <g transform="translate(48, 224)">
+    <!-- Pill 1: OpenCV / YOLO -->
+    <rect width="185" height="30" rx="15" fill="#121822" stroke="#39FF14" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="16" cy="15" r="4" fill="#39FF14" filter="url(#neonGlow)"/>
+    <text x="28" y="19" fill="#E6EDF3" font-family="'Fira Code', Consolas, monospace" font-size="11" font-weight="600">OpenCV &amp; YOLO</text>
+
+    <!-- Pill 2: Python & C# -->
+    <g transform="translate(195, 0)">
+      <rect width="195" height="30" rx="15" fill="#121822" stroke="#30363D" stroke-width="1"/>
+      <circle cx="16" cy="15" r="4" fill="#00FF66"/>
+      <text x="28" y="19" fill="#E6EDF3" font-family="'Fira Code', Consolas, monospace" font-size="11" font-weight="600">Python • C# (.NET)</text>
+    </g>
+
+    <!-- Pill 3: Automation & AI -->
+    <g transform="translate(400, 0)">
+      <rect width="210" height="30" rx="15" fill="#121822" stroke="#30363D" stroke-width="1"/>
+      <circle cx="16" cy="15" r="4" fill="#39FF14"/>
+      <text x="28" y="19" fill="#E6EDF3" font-family="'Fira Code', Consolas, monospace" font-size="11" font-weight="600">AI Agents &amp; Pipelines</text>
+    </g>
+  </g>
+</svg>
